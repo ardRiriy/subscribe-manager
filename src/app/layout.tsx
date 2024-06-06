@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { M_PLUS_1p } from "next/font/google";
 import "./globals.css";
+import {NextFont} from "next/dist/compiled/@next/font";
 
-const inter = Inter({ subsets: ["latin"] });
+const mPlus1p :NextFont = M_PLUS_1p({
+  weight: '700',
+  preload: false
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={mPlus1p.className}>{children}</body>
     </html>
   );
 }
