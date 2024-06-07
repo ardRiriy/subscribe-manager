@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { M_PLUS_1p } from "next/font/google";
 import "./globals.css";
 import {NextFont} from "next/dist/compiled/@next/font";
+import React from "react";
 
 const mPlus1p :NextFont = M_PLUS_1p({
   weight: '700',

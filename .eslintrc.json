@@ -24,7 +24,14 @@
   },
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
+    "no-console": "error",
+    "no-unused-vars": "error",
+    "no-constant-condition": "error",
+    "eol-last": "error",
 
+    "curly": "error",
+    "comma-style": "error",
+    "space-before-blocks": "error"
   },
   "settings": { "react": { "version": "detect" } }
 }
