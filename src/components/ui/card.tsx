@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
+import PropTypes from "prop-types";
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -29,6 +30,7 @@ const CardHeader = React.forwardRef<
 ))
 CardHeader.displayName = "CardHeader"
 
+
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
@@ -43,6 +45,7 @@ const CardTitle = React.forwardRef<
   />
 ))
 CardTitle.displayName = "CardTitle"
+
 
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
@@ -77,3 +80,27 @@ const CardFooter = React.forwardRef<
 CardFooter.displayName = "CardFooter"
 
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+
+Card.propTypes = {
+    className: PropTypes.string,
+}
+
+CardHeader.propTypes = {
+    className: PropTypes.string,
+}
+
+CardFooter.propTypes = {
+    className: PropTypes.string,
+}
+
+CardTitle.propTypes = {
+    className: PropTypes.string,
+}
+
+CardDescription.propTypes = {
+    className: PropTypes.string,
+}
+
+CardContent.propTypes = {
+    className: PropTypes.string,
+}
